@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">  <!--AngularJS framework’ünün çalışacağı alanı belirtir.-->
+<head>
+    <meta charset="utf-8" />
+    <title>Kullanıcı Girişi</title>
+
+    <!--Style Sheet-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Page Icon-->
+    <link rel="icon" type="image/x-icon" href="app/favicon.ico">
+
+    <!--Library Scripts-->
+    <script src="Scripts/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script src="Scripts/angular.min.js" type="text/javascript"></script>
+    <script src="Scripts/angular-resource.min.js" type="text/javascript"></script>
+    <script src="Scripts/angular-route.min.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--Application Scripts-->
+    <script src="app/app.js" type="text/javascript"></script>
+    <script src="commonService/commonService.js" type="text/javascript"></script>
+    <script src="app/loginPage/login-page.component.js" type="text/javascript"></script>
+    <script src="app/homePage/home-page.component.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <ng-view></ng-view> <!--belirtilen rotalarda HTML templatelerini veya viewlerini görüntülemek için kullanılır. Geçerli rota her değiştiğinde, dahil edilen görünüm de onunla birlikte $route servisinin yapılandırmasına göre değişir.-->
+    </div>
+</body>
+</html>

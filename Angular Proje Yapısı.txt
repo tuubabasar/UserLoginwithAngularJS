@@ -1,0 +1,28 @@
+﻿● ui
++---● app
+|   +--● homePage
+|      |--home-page.component.js
+|      |--homePage.html
+|      |
+|      +--● loginPage
+|      |  |--login-page.component.js
+|      |  |--loginPage.html
+|      |
+|      |--app.js
+|      |
+|
++--● CommonService
+|  |--commonService.js
+|
+|---● Content(.css dosyaları)
+|
++---● fonts(font dosyaları)
+|   
++---● Scripts(.js dosyaları)
+|   
++---● index.html
+|   
++---● package.config
+|   
++---● Web.config
+|   

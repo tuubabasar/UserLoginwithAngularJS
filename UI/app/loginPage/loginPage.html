@@ -1,0 +1,58 @@
+﻿<!--<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Kullanıcı Girişi</title>-->
+
+    <!--Style Sheet-->
+    <!--<link href="../../Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
+
+    <!--Library Scripts-->
+    <!--<script src="../../Scripts/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/angular.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/angular-resource.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/angular-route.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/bootstrap.min.js" type="text/javascript"></script>-->
+
+    <!--Application Scripts-->
+    <!--<script src="../../app/app.js" type="text/javascript"></script>
+    <script src="../../commonService/commonService.js" type="text/javascript"></script>
+    <script src="../../app/loginPage/login-page.component.js" type="text/javascript"></script>
+
+</head>
+<body style="background-color:azure">-->
+    <!--<div class="container">-->
+
+    <div class="col-sm-4 col-md-6 col-lg-offset-3 col-lg-6" ng-controller="userInformation">  <!--login-page.component.js teki userInformation controller'ı burada kullan-->
+        <h4 style="margin-top:5%; text-align:center">Kullanıcı Girişi</h4>
+        <br />
+        <form name="form" role="form" autocomplete="off">
+
+            <div class="form-group" ng-class="{'has-error':form.username.$dirty && form.username.$error.required }">
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" name="username" id="username" class="form-control" ng-model="vm.username" required />
+                <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Kullanıcı adı gerekli</span>
+            </div>
+
+            <div class="form-group" ng-class="{'has-error':form.password.$dirty && form.password.$error.required }">
+                <label for="password">Şifre</label>
+                <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
+                <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Şifre gerekli</span>
+                <label for="LastLoginTime" ng-model="vm.LastLoginTime">5</label>
+                <label for="State" ng-model="vm.State">4</label>
+                <label for="LastUpdateDate" ng-model="vm.LastUpdateDate">3</label>
+                <label for="RecordState" ng-model="vm.RecordState">2</label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" ng-click="vm.login(vm)" ng-disabled="form.$invalid" class="btn btn-primary">Giriş Yap</button>
+
+            </div>
+
+        </form>
+    </div>
+    <!--</div>-->
+<!--</body>
+</html>-->
+
